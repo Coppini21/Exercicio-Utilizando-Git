@@ -14,3 +14,9 @@ header{
     display: flex;
     justify-content: space-between;
 }
+
+.logoeOpcoes{
+    display: flex;
+    gap: 30px;
+    color: hsl(219, 9%, 45%);
+}
