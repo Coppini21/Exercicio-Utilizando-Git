@@ -15,7 +15,7 @@ header{
     justify-content: space-between;
 }
 
-.logoeOpcoes{
+.divLogoeOpcoes{
     display: flex;
     gap: 30px;
     color: hsl(219, 9%, 45%);
@@ -27,4 +27,17 @@ header{
 
 .collections{
     margin-left: 30px;
+}
+
+.divCartAvatar{
+    display: flex;
+    gap: 30px;
+}
+
+.imgAvatar{
+    width: 45px;
+}
+
+.divCartAvatar div{
+    margin: auto;
 }
