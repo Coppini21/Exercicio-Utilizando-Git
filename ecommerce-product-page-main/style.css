@@ -38,9 +38,8 @@ header{
     width: 100%;
     height: 4px;
     background-color: hsl(26, 100%, 55%);
-    margin-top: 41px;
+    margin-top: 46px;
     transition: 0.4s;
-
 }
 
 .collections{
@@ -87,4 +86,11 @@ header{
 
 .divCartAvatar div{
     margin: auto;
+}
+
+.linha{
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 1px;
+    background-color: hsl(220, 14%, 75%);
 }
