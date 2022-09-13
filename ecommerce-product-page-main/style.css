@@ -13,6 +13,11 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    padding: 30px 70px 30px 70px;
+}
+
+.imgLogo{
+    margin: auto;
 }
 
 .divLogoeOpcoes{
@@ -23,6 +28,7 @@ header{
 
 .opcao{
     cursor: pointer;
+    margin: auto;
 }
 
 .collections{
