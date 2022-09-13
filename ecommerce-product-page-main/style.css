@@ -9,3 +9,8 @@ body{
     width: 100vw;
     background-color: white;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
