@@ -39,6 +39,7 @@ header{
     height: 4px;
     background-color: hsl(26, 100%, 55%);
     margin-top: 41px;
+    transition: 0.4s;
 
 }
 
@@ -61,6 +62,11 @@ header{
 
 .contact{
     position: relative;
+}
+
+.opcao:hover .linhaSelectOpcao {
+    display: block;
+    transition: 0.4s;
 }
 
 .divCartAvatar{
