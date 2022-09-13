@@ -75,7 +75,14 @@ header{
 }
 
 .imgAvatar{
-    width: 45px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.imgAvatar:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
 }
 
 .divCartAvatar div{
