@@ -111,12 +111,22 @@ svg:hover path{
 
 main{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .secaoTotalLadoEsquerdo{
+    float: left;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.imgProdutoPrincipal{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;   
 }
 
