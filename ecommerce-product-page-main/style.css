@@ -130,3 +130,30 @@ main{
     border-radius: 20px;   
 }
 
+.opcoesImagensDoProduto{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.imagensFooter{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.divOverlayImagens:hover .overlay{
+    display: block;
+    cursor: pointer;
+}
+
+.overlay{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background:  hsla(230, 60%, 98%, 0.712);
+    border-radius: 10px;
+}
+
