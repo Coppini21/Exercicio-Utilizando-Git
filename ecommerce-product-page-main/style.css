@@ -108,3 +108,15 @@ svg:hover path{
     height: 1px;
     background-color: hsl(220, 14%, 75%);
 }
+
+main{
+    display: flex;
+}
+
+.secaoTotalLadoEsquerdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
