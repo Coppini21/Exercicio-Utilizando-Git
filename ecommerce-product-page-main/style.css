@@ -76,6 +76,14 @@ header{
     gap: 45px;
 }
 
+.divCart{
+    cursor: pointer;
+}
+
+svg:hover path{
+    fill: black;
+}
+
 .imgAvatar{
     width: 55px;
     height: 55px;
