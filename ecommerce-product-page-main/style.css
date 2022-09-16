@@ -32,6 +32,7 @@ header{
 .opcao{
     cursor: pointer;
     margin: auto;
+    font-size: 16px;
 }
 
 .opcao:hover{
@@ -183,6 +184,27 @@ h1{
     font-size: 16px;
     max-width: 430px;
     color: hsl(219, 9%, 45%);
-    margin-top: 20px;
+    margin-top: 25px;
     line-height: 1.5;
+}
+
+h3{
+    display: flex;
+    align-items: center;
+
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.desconto{
+    
+    font-size: 16px;
+    font-weight: 700;
+    background-color: hsl(25, 100%, 94%);
+    padding: 3px 6px 3px 6px;
+    border-radius: 5px;
+    color: hsl(26, 100%, 55%);
+    margin-left: 15px;
+
 }
