@@ -179,3 +179,10 @@ h1{
     color: hsl(220, 13%, 13%);
 }
 
+.paragrafo{
+    font-size: 16px;
+    max-width: 430px;
+    color: hsl(219, 9%, 45%);
+    margin-top: 20px;
+    line-height: 1.5;
+}
