@@ -237,9 +237,24 @@ h3{
     width: 42px;
     height: 20px;
     color: hsl(26, 100%, 55%);
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     cursor: pointer;
+    position: relative;
+}
+
+.overlayBotaoEliminar{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:  hsla(230, 60%, 98%, 0.425);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.botaoEliminar:hover .overlayBotaoEliminar{
+    display: block;
 }
 
 .quantidade{
