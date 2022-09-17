@@ -219,6 +219,7 @@ h3{
 .totalBotoes-Quantidade-AdicionarCart{
     display: flex;
     margin-top: 40px;
+    gap: 20px;
 }
 
 .divBotaoQuantidade{
@@ -272,5 +273,9 @@ h3{
     padding: 13px 7px 13px 7px;
     gap: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px hsl(26, 80%, 54%);
+    box-shadow: 5px 5px 10px hsl(26, 80%, 67%);
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
 }
