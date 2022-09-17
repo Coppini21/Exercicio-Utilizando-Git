@@ -215,3 +215,47 @@ h3{
     margin-top: 10px;
     text-decoration: line-through;
 }
+
+.totalBotoes-Quantidade-AdicionarCart{
+    display: flex;
+    margin-top: 40px;
+}
+
+.divBotaoQuantidade{
+    display: flex;
+    width: 126px;
+    background-color: hsl(223, 64%, 98%);
+    padding: 13px 7px 13px 7px;
+    border-radius: 10px;
+}
+
+.botaoEliminar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 20px;
+    color: hsl(26, 100%, 55%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.quantidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.botaoAdicionar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 42px;
+    color: hsl(26, 100%, 55%);
+    font-size: 20px;
+    font-weight: 700;
+}
