@@ -259,3 +259,9 @@ h3{
     font-size: 20px;
     font-weight: 700;
 }
+
+.botaoAddCart{
+    width: 250px;
+    background-color: hsl(26, 100%, 55%);
+    padding: 13px 7px 13px 7px;
+}
