@@ -1,5 +1,6 @@
-const cart = []
 var soma = 0
+var somaLocalStorage = 0
+var meuStorage = window.localStorage
 
 function clickBotaoAdicionar(){
     let quantidade = document.getElementById('quantidade')
@@ -7,7 +8,7 @@ function clickBotaoAdicionar(){
 
     if (soma < 0){
         soma = 0 
-        quantidade.innerHTML = `${soma}`  
+        quantidade.innerHTML = `${soma}`
     } else {
         quantidade.innerHTML = `${soma}`
     }   
@@ -19,8 +20,22 @@ function clickBotaoEliminar(){
 
     if (soma < 0){
         soma = 0 
-        quantidade.innerHTML = `${soma}`  
+        quantidade.innerHTML = `${soma}`
     } else {
         quantidade.innerHTML = `${soma}`
     }   
+}
+
+function clickBotaoAddCart(){
+    var quantidadeCarrinho = document.getElementById("quantidadeCarrinho")
+ 
+    if (soma > 0) {
+        somaLocalStorage = soma
+        meuStorage.setItem('ValorTotal-Produto-Tenis', JSON.stringify(somaLocalStorage * 125))
+        quantidadeCarrinho.style.display = 'flex'
+        quantidadeCarrinho.innerHTML = somaLocalStorage
+    }else{
+        quantidadeCarrinho.style.display = 'none'
+        localStorage.clear()
+    }
 }
