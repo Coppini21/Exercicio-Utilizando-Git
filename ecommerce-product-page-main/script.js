@@ -53,7 +53,22 @@ window.addEventListener("click", function(event) {
 
 function openCart(event){
     let openCart = document.getElementById('divDescricaoProdutoCart')
+    let descricaoCartVazio = document.getElementById("paragrafoDescricaoCartVazio")
+    let descricaoCartCheio = document.getElementById("divTotalDescricaoCartCheio")
+    let paragrafoCartCheio = document.getElementById('paragrafoDescricaoCartCheio')
+    paragrafoCartCheio.innerHTML = `Fall Limited Edition Sneakers <br>
+    $ 125.00 x`
 
         openCart.style.display = 'block'
-        event.stopPropagation();   
+        event.stopPropagation(); 
+        
+        if(soma > 0){
+            descricaoCartVazio.style.display = "none"
+            descricaoCartCheio.style.display = "block"
+            paragrafoCartCheio.innerHTML += ""
+            paragrafoCartCheio.innerHTML += ` ${soma}  <span class="textBlack">$${soma * 125}.00</span>`
+        }else{
+            descricaoCartVazio.style.display = "flex"
+            descricaoCartCheio.style.display = "none"
+        }
 }
