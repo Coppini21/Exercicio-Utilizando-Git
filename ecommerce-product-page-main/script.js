@@ -39,3 +39,21 @@ function clickBotaoAddCart(){
         localStorage.clear()
     }
 }
+
+
+window.addEventListener("click", function(event) {
+    let openCart = document.getElementById('divDescricaoProdutoCart')
+
+    if (!openCart.contains(event.target)){
+        if (openCart.style.display == 'block'){
+            openCart.style.display = 'none'
+        }
+    }
+})
+
+function openCart(event){
+    let openCart = document.getElementById('divDescricaoProdutoCart')
+
+        openCart.style.display = 'block'
+        event.stopPropagation();   
+}
