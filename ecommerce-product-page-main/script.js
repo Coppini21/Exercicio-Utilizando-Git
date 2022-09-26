@@ -72,3 +72,152 @@ function openCart(event){
             descricaoCartCheio.style.display = "none"
         }
 }
+
+
+
+
+function clickFoto1(event){
+    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[0]
+    let overlay2 = document.getElementsByClassName('clickOver')[1]
+    let overlay3 = document.getElementsByClassName('clickOver')[2]
+    let overlay4 = document.getElementsByClassName('clickOver')[3]
+    let divOverlayImagens1 = document.getElementsByClassName('divOverlayImagens1')[0]
+
+    overlay2.style.display = 'none'
+    overlay3.style.display = 'none'
+    overlay4.style.display = 'none'
+    
+    if(divOverlayImagens1.contains(event.target)){
+    imgProdutoPrincipal.setAttribute('src', 'images/image-product-1.jpg');
+    overlay1.style.display = 'block';
+    } else {
+        overlay1.style.display = 'none'
+    }
+
+    event.stopPropagation()
+}
+
+function clickFoto2(event){
+    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[0]
+    let overlay2 = document.getElementsByClassName('clickOver')[1]
+    let overlay3 = document.getElementsByClassName('clickOver')[2]
+    let overlay4 = document.getElementsByClassName('clickOver')[3]
+    let divOverlayImagens2 = document.getElementsByClassName('divOverlayImagens2')[0]
+
+    overlay1.style.display = 'none'
+    overlay3.style.display = 'none'
+    overlay4.style.display = 'none'
+
+    if(divOverlayImagens2.contains(event.target)){
+    imgProdutoPrincipal.setAttribute('src', 'images/image-product-2.jpg');
+    overlay2.style.display = 'block';
+    } else {
+        overlay2.style.display = 'none'
+    }
+
+    event.stopPropagation()
+}
+
+ function clickFoto3(event){
+    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[0]
+    let overlay2 = document.getElementsByClassName('clickOver')[1]
+    let overlay3 = document.getElementsByClassName('clickOver')[2]
+    let overlay4 = document.getElementsByClassName('clickOver')[3]
+    let divOverlayImagens3 = document.getElementsByClassName('divOverlayImagens3')[0]
+
+    overlay1.style.display = 'none'
+    overlay2.style.display = 'none'
+    overlay4.style.display = 'none'
+
+
+    if(divOverlayImagens3.contains(event.target)){
+    imgProdutoPrincipal.setAttribute('src', 'images/image-product-3.jpg');
+    overlay3.style.display = 'block';
+    } else {
+        overlay3.style.display = 'none'
+    }
+
+    event.stopPropagation()
+}
+
+function clickFoto4(event){
+    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[0]
+    let overlay2 = document.getElementsByClassName('clickOver')[1]
+    let overlay3 = document.getElementsByClassName('clickOver')[2]
+    let overlay4 = document.getElementsByClassName('clickOver')[3]
+    let divOverlayImagens4 = document.getElementsByClassName('divOverlayImagens4')[0]
+
+    overlay1.style.display = 'none'
+    overlay2.style.display = 'none'
+    overlay3.style.display = 'none'
+
+    if(divOverlayImagens4.contains(event.target)){
+    imgProdutoPrincipal.setAttribute('src', 'images/image-product-4.jpg');
+    overlay4.style.display = 'block';
+    } else {
+        overlay4.style.display = 'none';
+    }
+
+
+    event.stopPropagation()
+}
+
+function passandoNaImg1(){
+    let overlay1 = document.getElementsByClassName('overlay')[0]
+
+    overlay1.style.display = 'block';
+    overlay1.style.border = '0px solid  hsl(26, 100%, 55%)'; 
+}
+
+function tirandoMouse1(){
+    let overlay1 = document.getElementsByClassName('overlay')[0]
+    
+    overlay1.style.display = 'none';
+    overlay1.style.border = '2px solid  hsl(26, 100%, 55%)';
+}
+
+function passandoNaImg2(){
+    let overlay2 = document.getElementsByClassName('overlay')[1]
+
+    overlay2.style.display = 'block';
+    overlay2.style.border = '0px solid  hsl(26, 100%, 55%)'; 
+}
+
+function tirandoMouse2(){
+    let overlay2 = document.getElementsByClassName('overlay')[1]
+
+    overlay2.style.display = 'none';
+    overlay2.style.border = '2px solid  hsl(26, 100%, 55%)';
+}
+
+function passandoNaImg3(){
+    let overlay3 = document.getElementsByClassName('overlay')[2]
+
+    overlay3.style.display = 'block';
+    overlay3.style.border = '0px solid  hsl(26, 100%, 55%)'; 
+}
+
+function tirandoMouse3(){
+    let overlay3 = document.getElementsByClassName('overlay')[2]
+
+    overlay3.style.display = 'none';
+    overlay3.style.border = '2px solid  hsl(26, 100%, 55%)';
+}
+
+function passandoNaImg4(){
+    let overlay4 = document.getElementsByClassName('overlay')[3]
+
+    overlay4.style.display = 'block';
+    overlay4.style.border = '0px solid  hsl(26, 100%, 55%)'; 
+}
+
+function tirandoMouse4(){
+    let overlay4 = document.getElementsByClassName('overlay')[3]
+
+    overlay4.style.display = 'none';
+    overlay4.style.border = '2px solid  hsl(26, 100%, 55%)';
+}
