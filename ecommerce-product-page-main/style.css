@@ -267,17 +267,24 @@ main{
     border-radius: 10px;
 }
 
-.divOverlayImagens:hover .overlay{
-    display: block;
-    cursor: pointer;
-}
 
 .overlay{
     display: none;
     position: absolute;
     width: 100px;
     height: 100px;
-    background:  hsla(230, 60%, 98%, 0.712);
+    background: hsla(230, 60%, 98%, 0.712);
+    border-radius: 10px;
+}
+
+
+.clickOver{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: hsla(230, 60%, 98%, 0.712);
+    border: 2px solid  hsl(26, 100%, 55%);
     border-radius: 10px;
 }
 
