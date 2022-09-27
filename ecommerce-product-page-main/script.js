@@ -78,11 +78,11 @@ function openCart(event){
 
 function clickFoto1(event){
     let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
-    let overlay1 = document.getElementsByClassName('clickOver')[0]
-    let overlay2 = document.getElementsByClassName('clickOver')[1]
-    let overlay3 = document.getElementsByClassName('clickOver')[2]
-    let overlay4 = document.getElementsByClassName('clickOver')[3]
-    let divOverlayImagens1 = document.getElementsByClassName('divOverlayImagens1')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[4]
+    let overlay2 = document.getElementsByClassName('clickOver')[5]
+    let overlay3 = document.getElementsByClassName('clickOver')[6]
+    let overlay4 = document.getElementsByClassName('clickOver')[7]
+    let divOverlayImagens1 = document.getElementsByClassName('divOverlayImagens1')[1]
 
     overlay2.style.display = 'none'
     overlay3.style.display = 'none'
@@ -100,11 +100,11 @@ function clickFoto1(event){
 
 function clickFoto2(event){
     let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
-    let overlay1 = document.getElementsByClassName('clickOver')[0]
-    let overlay2 = document.getElementsByClassName('clickOver')[1]
-    let overlay3 = document.getElementsByClassName('clickOver')[2]
-    let overlay4 = document.getElementsByClassName('clickOver')[3]
-    let divOverlayImagens2 = document.getElementsByClassName('divOverlayImagens2')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[4]
+    let overlay2 = document.getElementsByClassName('clickOver')[5]
+    let overlay3 = document.getElementsByClassName('clickOver')[6]
+    let overlay4 = document.getElementsByClassName('clickOver')[7]
+    let divOverlayImagens2 = document.getElementsByClassName('divOverlayImagens2')[1]
 
     overlay1.style.display = 'none'
     overlay3.style.display = 'none'
@@ -122,11 +122,11 @@ function clickFoto2(event){
 
  function clickFoto3(event){
     let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
-    let overlay1 = document.getElementsByClassName('clickOver')[0]
-    let overlay2 = document.getElementsByClassName('clickOver')[1]
-    let overlay3 = document.getElementsByClassName('clickOver')[2]
-    let overlay4 = document.getElementsByClassName('clickOver')[3]
-    let divOverlayImagens3 = document.getElementsByClassName('divOverlayImagens3')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[4]
+    let overlay2 = document.getElementsByClassName('clickOver')[5]
+    let overlay3 = document.getElementsByClassName('clickOver')[6]
+    let overlay4 = document.getElementsByClassName('clickOver')[7]
+    let divOverlayImagens3 = document.getElementsByClassName('divOverlayImagens3')[1]
 
     overlay1.style.display = 'none'
     overlay2.style.display = 'none'
@@ -145,11 +145,11 @@ function clickFoto2(event){
 
 function clickFoto4(event){
     let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
-    let overlay1 = document.getElementsByClassName('clickOver')[0]
-    let overlay2 = document.getElementsByClassName('clickOver')[1]
-    let overlay3 = document.getElementsByClassName('clickOver')[2]
-    let overlay4 = document.getElementsByClassName('clickOver')[3]
-    let divOverlayImagens4 = document.getElementsByClassName('divOverlayImagens4')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[4]
+    let overlay2 = document.getElementsByClassName('clickOver')[5]
+    let overlay3 = document.getElementsByClassName('clickOver')[6]
+    let overlay4 = document.getElementsByClassName('clickOver')[7]
+    let divOverlayImagens4 = document.getElementsByClassName('divOverlayImagens4')[1]
 
     overlay1.style.display = 'none'
     overlay2.style.display = 'none'
@@ -166,57 +166,118 @@ function clickFoto4(event){
     event.stopPropagation()
 }
 
-function passandoNaImg1(){
+
+/*PARTE DE BAIXO OVERLAY */
+
+function passandoNaImg1DepoisDoClick(){
     let overlay1 = document.getElementsByClassName('overlay')[0]
 
     overlay1.style.display = 'block';
     overlay1.style.border = '0px solid  hsl(26, 100%, 55%)'; 
 }
 
-function tirandoMouse1(){
+function tirandoMouse1DepoisDoClick(){
     let overlay1 = document.getElementsByClassName('overlay')[0]
     
     overlay1.style.display = 'none';
     overlay1.style.border = '2px solid  hsl(26, 100%, 55%)';
 }
 
-function passandoNaImg2(){
+function passandoNaImg2DepoisDoClick(){
     let overlay2 = document.getElementsByClassName('overlay')[1]
 
     overlay2.style.display = 'block';
     overlay2.style.border = '0px solid  hsl(26, 100%, 55%)'; 
 }
 
-function tirandoMouse2(){
+function tirandoMouse2DepoisDoClick(){
     let overlay2 = document.getElementsByClassName('overlay')[1]
 
     overlay2.style.display = 'none';
     overlay2.style.border = '2px solid  hsl(26, 100%, 55%)';
 }
 
-function passandoNaImg3(){
+function passandoNaImg3DepoisDoClick(){
     let overlay3 = document.getElementsByClassName('overlay')[2]
 
     overlay3.style.display = 'block';
     overlay3.style.border = '0px solid  hsl(26, 100%, 55%)'; 
 }
 
-function tirandoMouse3(){
+function tirandoMouse3DepoisDoClick(){
     let overlay3 = document.getElementsByClassName('overlay')[2]
 
     overlay3.style.display = 'none';
     overlay3.style.border = '2px solid  hsl(26, 100%, 55%)';
 }
 
-function passandoNaImg4(){
+function passandoNaImg4DepoisDoClick(){
     let overlay4 = document.getElementsByClassName('overlay')[3]
 
     overlay4.style.display = 'block';
     overlay4.style.border = '0px solid  hsl(26, 100%, 55%)'; 
 }
 
-function tirandoMouse4(){
+function tirandoMouse4DepoisDoClick(){
     let overlay4 = document.getElementsByClassName('overlay')[3]
+
+    overlay4.style.display = 'none';
+    overlay4.style.border = '2px solid  hsl(26, 100%, 55%)';
+}
+
+/*PARTE DE BAIXO OVERLAY */
+
+function passandoNaImg1(){
+    let overlay1 = document.getElementsByClassName('overlay')[4]
+
+    overlay1.style.display = 'block';
+    overlay1.style.border = '0px solid  hsl(26, 100%, 55%)'; 
+}
+
+function tirandoMouse1(){
+    let overlay1 = document.getElementsByClassName('overlay')[4]
+    
+    overlay1.style.display = 'none';
+    overlay1.style.border = '2px solid  hsl(26, 100%, 55%)';
+}
+
+function passandoNaImg2(){
+    let overlay2 = document.getElementsByClassName('overlay')[5]
+
+    overlay2.style.display = 'block';
+    overlay2.style.border = '0px solid  hsl(26, 100%, 55%)'; 
+}
+
+function tirandoMouse2(){
+    let overlay2 = document.getElementsByClassName('overlay')[5]
+
+    overlay2.style.display = 'none';
+    overlay2.style.border = '2px solid  hsl(26, 100%, 55%)';
+}
+
+function passandoNaImg3(){
+    let overlay3 = document.getElementsByClassName('overlay')[6]
+
+    overlay3.style.display = 'block';
+    overlay3.style.border = '0px solid  hsl(26, 100%, 55%)'; 
+}
+
+function tirandoMouse3(){
+    let overlay3 = document.getElementsByClassName('overlay')[6]
+
+    overlay3.style.display = 'none';
+    overlay3.style.border = '2px solid  hsl(26, 100%, 55%)';
+}
+
+function passandoNaImg4(){
+    let overlay4 = document.getElementsByClassName('overlay')[7]
+
+    overlay4.style.display = 'block';
+    overlay4.style.border = '0px solid  hsl(26, 100%, 55%)'; 
+}
+
+function tirandoMouse4(){
+    let overlay4 = document.getElementsByClassName('overlay')[7]
 
     overlay4.style.display = 'none';
     overlay4.style.border = '2px solid  hsl(26, 100%, 55%)';
