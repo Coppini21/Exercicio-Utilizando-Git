@@ -75,6 +75,95 @@ function openCart(event){
 
 
 
+function clickFoto1AmpliandoImg(event){
+    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[0]
+    let overlay2 = document.getElementsByClassName('clickOver')[1]
+    let overlay3 = document.getElementsByClassName('clickOver')[2]
+    let overlay4 = document.getElementsByClassName('clickOver')[3]
+    let divOverlayImagens1 = document.getElementsByClassName('divOverlayImagens1')[0]
+
+    overlay2.style.display = 'none'
+    overlay3.style.display = 'none'
+    overlay4.style.display = 'none'
+    
+    if(divOverlayImagens1.contains(event.target)){
+    imgProdutoPrincipal.setAttribute('src', 'images/image-product-1.jpg');
+    overlay1.style.display = 'block';
+    } else {
+        overlay1.style.display = 'none'
+    }
+
+    event.stopPropagation()
+}
+
+function clickFoto2AmpliandoImg(event){
+    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[0]
+    let overlay2 = document.getElementsByClassName('clickOver')[1]
+    let overlay3 = document.getElementsByClassName('clickOver')[2]
+    let overlay4 = document.getElementsByClassName('clickOver')[3]
+    let divOverlayImagens2 = document.getElementsByClassName('divOverlayImagens2')[0]
+
+    overlay1.style.display = 'none'
+    overlay3.style.display = 'none'
+    overlay4.style.display = 'none'
+
+    if(divOverlayImagens2.contains(event.target)){
+    imgProdutoPrincipal.setAttribute('src', 'images/image-product-2.jpg');
+    overlay2.style.display = 'block';
+    } else {
+        overlay2.style.display = 'none'
+    }
+
+    event.stopPropagation()
+}
+
+ function clickFoto3AmpliandoImg(event){
+    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[0]
+    let overlay2 = document.getElementsByClassName('clickOver')[1]
+    let overlay3 = document.getElementsByClassName('clickOver')[2]
+    let overlay4 = document.getElementsByClassName('clickOver')[3]
+    let divOverlayImagens3 = document.getElementsByClassName('divOverlayImagens3')[0]
+
+    overlay1.style.display = 'none'
+    overlay2.style.display = 'none'
+    overlay4.style.display = 'none'
+
+
+    if(divOverlayImagens3.contains(event.target)){
+    imgProdutoPrincipal.setAttribute('src', 'images/image-product-3.jpg');
+    overlay3.style.display = 'block';
+    } else {
+        overlay3.style.display = 'none'
+    }
+
+    event.stopPropagation()
+}
+
+function clickFoto4AmpliandoImg(event){
+    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
+    let overlay1 = document.getElementsByClassName('clickOver')[0]
+    let overlay2 = document.getElementsByClassName('clickOver')[1]
+    let overlay3 = document.getElementsByClassName('clickOver')[2]
+    let overlay4 = document.getElementsByClassName('clickOver')[3]
+    let divOverlayImagens4 = document.getElementsByClassName('divOverlayImagens4')[0]
+
+    overlay1.style.display = 'none'
+    overlay2.style.display = 'none'
+    overlay3.style.display = 'none'
+
+    if(divOverlayImagens4.contains(event.target)){
+    imgProdutoPrincipal.setAttribute('src', 'images/image-product-4.jpg');
+    overlay4.style.display = 'block';
+    } else {
+        overlay4.style.display = 'none';
+    }
+
+
+    event.stopPropagation()
+}
 
 function clickFoto1(event){
     let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
