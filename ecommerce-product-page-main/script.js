@@ -165,6 +165,50 @@ function clickFoto4AmpliandoImg(event){
     event.stopPropagation()
 }
 
+function clicandoDuasVezesNaImg1(){
+    let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
+    let bigOverlay = document.getElementsByClassName('bigOverlay')[0]
+    let imgPrincipalDoProduto1 = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
+
+    secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex'
+    bigOverlay.style.display = 'block'
+    
+    imgPrincipalDoProduto1.setAttribute('src', 'images/image-product-1.jpg')
+}
+
+function clicandoDuasVezesNaImg2(){
+    let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
+    let bigOverlay = document.getElementsByClassName('bigOverlay')[0]
+    let imgPrincipalDoProduto2 = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
+
+    secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex'
+    bigOverlay.style.display = 'block'
+    
+    imgPrincipalDoProduto2.setAttribute('src', 'images/image-product-2.jpg')
+}
+
+function clicandoDuasVezesNaImg3(){
+    let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
+    let bigOverlay = document.getElementsByClassName('bigOverlay')[0]
+    let imgPrincipalDoProduto3 = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
+
+    secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex'
+    bigOverlay.style.display = 'block'
+    
+    imgPrincipalDoProduto3.setAttribute('src', 'images/image-product-3.jpg')
+}
+
+function clicandoDuasVezesNaImg4(){
+    let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
+    let bigOverlay = document.getElementsByClassName('bigOverlay')[0]
+    let imgPrincipalDoProduto4 = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
+
+    secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex'
+    bigOverlay.style.display = 'block'
+    
+    imgPrincipalDoProduto4.setAttribute('src', 'images/image-product-4.jpg')
+}
+
 function clickFoto1(event){
     let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
     let overlay1 = document.getElementsByClassName('clickOver')[4]
