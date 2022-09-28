@@ -190,6 +190,13 @@ header{
     display: block;
 }
 
+.divImgLixeira{
+    cursor: pointer;
+}
+
+.divImgLixeira:hover svg path{
+    fill: black;
+}
 
 #quantidadeCarrinho{
     display: none;
