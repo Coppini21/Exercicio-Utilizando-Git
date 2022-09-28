@@ -73,6 +73,20 @@ function openCart(event){
         }
 }
 
+function excluindoItemCart(){
+    let quantidade = document.getElementById('quantidade')
+    let descricaoCartVazio = document.getElementById("paragrafoDescricaoCartVazio")
+    let descricaoCartCheio = document.getElementById("divTotalDescricaoCartCheio")
+    let quantidadeCarrinho = document.getElementById('quantidadeCarrinho')
+    soma = 0
+
+    descricaoCartVazio.style.display = 'flex'
+    descricaoCartCheio.style.display = 'none'
+    quantidade.innerHTML = `${soma}`
+    quantidadeCarrinho.style.display = 'none'
+    localStorage.clear()
+}
+
 
 function fechandoImagens(){
     let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
