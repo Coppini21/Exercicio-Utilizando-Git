@@ -74,6 +74,13 @@ function openCart(event){
 }
 
 
+function fechandoImagens(){
+    let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
+    let bigOverlay = document.getElementsByClassName('bigOverlay')[0]
+
+    secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'none'
+    bigOverlay.style.display = 'none'
+}
 
 function clickFoto1AmpliandoImg(event){
     let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
