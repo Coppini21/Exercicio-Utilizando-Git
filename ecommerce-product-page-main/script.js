@@ -1,6 +1,8 @@
 var soma = 0
 var somaLocalStorage = 0
 var meuStorage = window.localStorage
+var imgProdutoPrincipalAmpliada = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
+
 
 function clickBotaoAdicionar(){
     let quantidade = document.getElementById('quantidade')
@@ -97,7 +99,6 @@ function fechandoImagens(){
 }
 
 function clickFoto1AmpliandoImg(event){
-    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
     let overlay1 = document.getElementsByClassName('clickOver')[0]
     let overlay2 = document.getElementsByClassName('clickOver')[1]
     let overlay3 = document.getElementsByClassName('clickOver')[2]
@@ -109,7 +110,7 @@ function clickFoto1AmpliandoImg(event){
     overlay4.style.display = 'none'
     
     if(divOverlayImagens1.contains(event.target)){
-    imgProdutoPrincipal.setAttribute('src', 'images/image-product-1.jpg');
+    imgProdutoPrincipalAmpliada.setAttribute('src', 'images/image-product-1.jpg');
     overlay1.style.display = 'block';
     } else {
         overlay1.style.display = 'none'
@@ -119,7 +120,6 @@ function clickFoto1AmpliandoImg(event){
 }
 
 function clickFoto2AmpliandoImg(event){
-    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
     let overlay1 = document.getElementsByClassName('clickOver')[0]
     let overlay2 = document.getElementsByClassName('clickOver')[1]
     let overlay3 = document.getElementsByClassName('clickOver')[2]
@@ -131,7 +131,7 @@ function clickFoto2AmpliandoImg(event){
     overlay4.style.display = 'none'
 
     if(divOverlayImagens2.contains(event.target)){
-    imgProdutoPrincipal.setAttribute('src', 'images/image-product-2.jpg');
+    imgProdutoPrincipalAmpliada.setAttribute('src', 'images/image-product-2.jpg');
     overlay2.style.display = 'block';
     } else {
         overlay2.style.display = 'none'
@@ -141,7 +141,6 @@ function clickFoto2AmpliandoImg(event){
 }
 
  function clickFoto3AmpliandoImg(event){
-    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
     let overlay1 = document.getElementsByClassName('clickOver')[0]
     let overlay2 = document.getElementsByClassName('clickOver')[1]
     let overlay3 = document.getElementsByClassName('clickOver')[2]
@@ -154,7 +153,7 @@ function clickFoto2AmpliandoImg(event){
 
 
     if(divOverlayImagens3.contains(event.target)){
-    imgProdutoPrincipal.setAttribute('src', 'images/image-product-3.jpg');
+    imgProdutoPrincipalAmpliada.setAttribute('src', 'images/image-product-3.jpg');
     overlay3.style.display = 'block';
     } else {
         overlay3.style.display = 'none'
@@ -164,7 +163,6 @@ function clickFoto2AmpliandoImg(event){
 }
 
 function clickFoto4AmpliandoImg(event){
-    let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
     let overlay1 = document.getElementsByClassName('clickOver')[0]
     let overlay2 = document.getElementsByClassName('clickOver')[1]
     let overlay3 = document.getElementsByClassName('clickOver')[2]
@@ -176,7 +174,7 @@ function clickFoto4AmpliandoImg(event){
     overlay3.style.display = 'none'
 
     if(divOverlayImagens4.contains(event.target)){
-    imgProdutoPrincipal.setAttribute('src', 'images/image-product-4.jpg');
+    imgProdutoPrincipalAmpliada.setAttribute('src', 'images/image-product-4.jpg');
     overlay4.style.display = 'block';
     } else {
         overlay4.style.display = 'none';
@@ -189,46 +187,61 @@ function clickFoto4AmpliandoImg(event){
 function clicandoDuasVezesNaImg1(){
     let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
     let bigOverlay = document.getElementsByClassName('bigOverlay')[0]
-    let imgPrincipalDoProduto1 = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
 
     secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex'
     bigOverlay.style.display = 'block'
     
-    imgPrincipalDoProduto1.setAttribute('src', 'images/image-product-1.jpg')
+    imgProdutoPrincipalAmpliada.setAttribute('src', 'images/image-product-1.jpg')
 }
 
 function clicandoDuasVezesNaImg2(){
     let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
     let bigOverlay = document.getElementsByClassName('bigOverlay')[0]
-    let imgPrincipalDoProduto2 = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
 
     secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex'
     bigOverlay.style.display = 'block'
     
-    imgPrincipalDoProduto2.setAttribute('src', 'images/image-product-2.jpg')
+    imgProdutoPrincipalAmpliada.setAttribute('src', 'images/image-product-2.jpg')
 }
 
 function clicandoDuasVezesNaImg3(){
     let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
     let bigOverlay = document.getElementsByClassName('bigOverlay')[0]
-    let imgPrincipalDoProduto3 = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
 
     secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex'
     bigOverlay.style.display = 'block'
     
-    imgPrincipalDoProduto3.setAttribute('src', 'images/image-product-3.jpg')
+    imgProdutoPrincipalAmpliada.setAttribute('src', 'images/image-product-3.jpg')
 }
 
 function clicandoDuasVezesNaImg4(){
     let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
     let bigOverlay = document.getElementsByClassName('bigOverlay')[0]
-    let imgPrincipalDoProduto4 = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
 
     secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex'
     bigOverlay.style.display = 'block'
     
-    imgPrincipalDoProduto4.setAttribute('src', 'images/image-product-4.jpg')
+    imgProdutoPrincipalAmpliada.setAttribute('src', 'images/image-product-4.jpg')
 }
+
+function clickNext(){
+    let foto1 = "images/image-product-1.jpg"
+    let foto2 = "images/image-product-2.jpg"
+    let foto3 = "images/image-product-3.jpg"
+
+    if(imgProdutoPrincipalAmpliada.getAttribute('src') == foto1){
+        imgProdutoPrincipalAmpliada.setAttribute('src', `images/image-product-2.jpg`)
+
+    } else if(imgProdutoPrincipalAmpliada.getAttribute('src') == foto2){
+        imgProdutoPrincipalAmpliada.setAttribute('src', `images/image-product-3.jpg`)
+
+    }else if(imgProdutoPrincipalAmpliada.getAttribute('src') == foto3){
+        imgProdutoPrincipalAmpliada.setAttribute('src', `images/image-product-4.jpg`)
+
+    }
+}
+
+
 
 function clickFoto1(event){
     let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
