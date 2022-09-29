@@ -224,6 +224,23 @@ function clicandoDuasVezesNaImg4(){
     imgProdutoPrincipalAmpliada.setAttribute('src', 'images/image-product-4.jpg')
 }
 
+function clickPrevious(){
+    let foto2 = "images/image-product-2.jpg"
+    let foto3 = "images/image-product-3.jpg"
+    let foto4 = "images/image-product-4.jpg"
+
+    if(imgProdutoPrincipalAmpliada.getAttribute('src') == foto2){
+        imgProdutoPrincipalAmpliada.setAttribute('src', `images/image-product-1.jpg`)
+
+    } else if(imgProdutoPrincipalAmpliada.getAttribute('src') == foto3){
+        imgProdutoPrincipalAmpliada.setAttribute('src', `images/image-product-2.jpg`)
+
+    }else if(imgProdutoPrincipalAmpliada.getAttribute('src') == foto4){
+        imgProdutoPrincipalAmpliada.setAttribute('src', `images/image-product-3.jpg`)
+
+    }
+}
+
 function clickNext(){
     let foto1 = "images/image-product-1.jpg"
     let foto2 = "images/image-product-2.jpg"
@@ -240,8 +257,6 @@ function clickNext(){
 
     }
 }
-
-
 
 function clickFoto1(event){
     let imgProdutoPrincipal = document.getElementsByClassName('imgProdutoPrincipal')[0]
