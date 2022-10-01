@@ -179,8 +179,7 @@ function clickFoto4AmpliandoImg(event){
     } else {
         overlay4.style.display = 'none';
     }
-
-
+    
     event.stopPropagation()
 }
 
@@ -254,7 +253,6 @@ function clickNext(){
 
     }else if(imgProdutoPrincipalAmpliada.getAttribute('src') == foto3){
         imgProdutoPrincipalAmpliada.setAttribute('src', `images/image-product-4.jpg`)
-
     }
 }
 
@@ -266,18 +264,17 @@ function clickFoto1(event){
     let overlay4 = document.getElementsByClassName('clickOver')[7]
     let divOverlayImagens1 = document.getElementsByClassName('divOverlayImagens1')[1]
 
-    overlay2.style.display = 'none'
-    overlay3.style.display = 'none'
-    overlay4.style.display = 'none'
+    overlay2.style.display = 'none';
+    overlay3.style.display = 'none';
+    overlay4.style.display = 'none';
     
     if(divOverlayImagens1.contains(event.target)){
-    imgProdutoPrincipal.setAttribute('src', 'images/image-product-1.jpg');
-    overlay1.style.display = 'block';
-    } else {
-        overlay1.style.display = 'none'
-    }
+        imgProdutoPrincipal.setAttribute('src', 'images/image-product-1.jpg');
+        overlay1.style.display = 'block';
 
-    event.stopPropagation()
+    } else if (!divOverlayImagens1.contains(event.target)){
+        overlay1.style.display = 'none';
+    }
 }
 
 function clickFoto2(event){
@@ -288,18 +285,17 @@ function clickFoto2(event){
     let overlay4 = document.getElementsByClassName('clickOver')[7]
     let divOverlayImagens2 = document.getElementsByClassName('divOverlayImagens2')[1]
 
-    overlay1.style.display = 'none'
-    overlay3.style.display = 'none'
-    overlay4.style.display = 'none'
+    overlay1.style.display = 'none';
+    overlay3.style.display = 'none';
+    overlay4.style.display = 'none';
 
     if(divOverlayImagens2.contains(event.target)){
-    imgProdutoPrincipal.setAttribute('src', 'images/image-product-2.jpg');
-    overlay2.style.display = 'block';
-    } else {
-        overlay2.style.display = 'none'
-    }
+        imgProdutoPrincipal.setAttribute('src', 'images/image-product-2.jpg');
+        overlay2.style.display = 'block';
 
-    event.stopPropagation()
+    } else if (!divOverlayImagens2.contains(event.target)){
+        overlay2.style.display = 'none';
+    }
 }
 
  function clickFoto3(event){
@@ -310,19 +306,17 @@ function clickFoto2(event){
     let overlay4 = document.getElementsByClassName('clickOver')[7]
     let divOverlayImagens3 = document.getElementsByClassName('divOverlayImagens3')[1]
 
-    overlay1.style.display = 'none'
-    overlay2.style.display = 'none'
-    overlay4.style.display = 'none'
-
+    overlay1.style.display = 'none';
+    overlay2.style.display = 'none';
+    overlay4.style.display = 'none';
 
     if(divOverlayImagens3.contains(event.target)){
-    imgProdutoPrincipal.setAttribute('src', 'images/image-product-3.jpg');
-    overlay3.style.display = 'block';
-    } else {
-        overlay3.style.display = 'none'
-    }
+        imgProdutoPrincipal.setAttribute('src', 'images/image-product-3.jpg');
+        overlay3.style.display = 'block';
 
-    event.stopPropagation()
+    } else if (!divOverlayImagens3.contains(event.target)){
+        overlay3.style.display = 'none';
+    }
 }
 
 function clickFoto4(event){
@@ -333,19 +327,17 @@ function clickFoto4(event){
     let overlay4 = document.getElementsByClassName('clickOver')[7]
     let divOverlayImagens4 = document.getElementsByClassName('divOverlayImagens4')[1]
 
-    overlay1.style.display = 'none'
-    overlay2.style.display = 'none'
-    overlay3.style.display = 'none'
+    overlay1.style.display = 'none';
+    overlay2.style.display = 'none';
+    overlay3.style.display = 'none';
 
     if(divOverlayImagens4.contains(event.target)){
-    imgProdutoPrincipal.setAttribute('src', 'images/image-product-4.jpg');
-    overlay4.style.display = 'block';
-    } else {
+        imgProdutoPrincipal.setAttribute('src', 'images/image-product-4.jpg');
+        overlay4.style.display = 'block';
+
+    } else if (!divOverlayImagens4.contains(event.target)){
         overlay4.style.display = 'none';
     }
-
-
-    event.stopPropagation()
 }
 
 
@@ -356,6 +348,7 @@ function passandoNaImg1DepoisDoClick(){
 
     overlay1.style.display = 'block';
     overlay1.style.border = '0px solid  hsl(26, 100%, 55%)'; 
+
 }
 
 function tirandoMouse1DepoisDoClick(){
@@ -363,13 +356,14 @@ function tirandoMouse1DepoisDoClick(){
     
     overlay1.style.display = 'none';
     overlay1.style.border = '2px solid  hsl(26, 100%, 55%)';
+    
 }
 
 function passandoNaImg2DepoisDoClick(){
     let overlay2 = document.getElementsByClassName('overlay')[1]
 
     overlay2.style.display = 'block';
-    overlay2.style.border = '0px solid  hsl(26, 100%, 55%)'; 
+    overlay2.style.border = '0px solid  hsl(26, 100%, 55%)';  
 }
 
 function tirandoMouse2DepoisDoClick(){
