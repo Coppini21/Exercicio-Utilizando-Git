@@ -28,6 +28,17 @@ header{
     padding: 30px 70px 30px 70px;
 }
 
+.headerMediaQueries{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.divLogoeOpcoesMediaQueries{
+    display: none;
+}
+
 .imgLogo{
     margin: auto;
 }
@@ -566,4 +577,9 @@ h3{
 
 .botaoAddCart:hover{
     box-shadow: none;
+}
+
+
+@media(max-width: 375px){
+
 }
