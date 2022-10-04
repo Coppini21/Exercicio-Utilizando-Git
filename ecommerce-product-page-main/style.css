@@ -581,5 +581,144 @@ h3{
 
 
 @media(max-width: 375px){
+ 
+    header{
+        padding: 20px 30px 10px 30px;
+    }
+    
+    .headerMediaQueries{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .divLogoeOpcoesMediaQueries{
+        display: none;
+    }
+    
+    .divLogoeOpcoes{
+        display: none;
+    }
 
+    .divCartAvatar{
+        display: flex;
+        gap: 25px;
+        position: relative;
+    }
+
+    .imgAvatar{
+        width: 25px;
+        height: 25px;
+    }
+
+    .linha{
+        display: none;
+    }
+
+    main{
+        max-width: 375px;
+        padding: 0;
+        overflow: hidden;
+        gap: 23px;
+        margin-top: -65px;
+        padding-bottom: 20px;
+    }
+
+    .secaoTotalLadoEsquerdo{
+        display: none;
+    }
+
+    .secaoTotalLadoEsquerdoDepoisDoClick{
+        max-width: 375px;
+        height: 350px;
+        display: flex;
+        position: relative;
+        margin-bottom: 0px;
+    }
+
+    .divImgPrevious{
+        height: 40px;
+        width: 40px;
+        margin-right: 75%;
+    }
+
+    .divImgPrevious:hover svg path{
+        stroke: hsl(26, 100%, 55%);
+    }
+
+    .imgProdutoPrincipalDepoisDoClick{
+        max-width: 375px;
+        height: 350px;
+        border-radius: 0px;
+    }
+
+    .divImgNext{
+        height: 40px;
+        width: 40px;
+        margin-left: 75%;
+    }
+
+    .divImgNext:hover svg path{
+        stroke: hsl(26, 100%, 55%);
+    }
+
+    .opcoesImagensDoProduto{
+        display: none;
+    }
+
+    .secaoTotalLadoDireito{
+        max-width: 90%;
+        height: 414px;
+    }
+
+    h5{
+        font-size: 11px;
+        margin-bottom: 10px;
+        letter-spacing: 1.2px;
+    }
+    
+    h1{
+        max-width: 370px;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .paragrafo{
+        font-size: 14px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    h3{
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+    .precoDesconto{
+        font-size: 14px;   
+        margin-top: -22px;
+        float: right;
+    }
+
+    .totalBotoes-Quantidade-AdicionarCart{
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    
+    .divBotaoQuantidade{
+        width: 100%;
+        padding: 18px 7px 18px 7px;
+        justify-content: space-between;
+    }
+
+    .botaoAddCart{
+        font-size: 16px;
+        width: 100%;
+        padding: 18px 7px 18px 7px;
+        gap: 10px;
+        font-size: 16px;
+    }
 }
+
