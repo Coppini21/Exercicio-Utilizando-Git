@@ -592,7 +592,15 @@ h3{
         align-items: center;
         gap: 15px;
     }
-    
+
+    .divMenu{
+        cursor: pointer;
+    }
+
+    .divMenu svg:hover path{
+        fill: black;
+    }
+
     .divLogoeOpcoesMediaQueries{
         display: none;
     }
@@ -630,9 +638,9 @@ h3{
     }
 
     .secaoTotalLadoEsquerdoDepoisDoClick{
+        display: flex;
         max-width: 375px;
         height: 350px;
-        display: flex;
         position: relative;
         margin-bottom: 0px;
     }
