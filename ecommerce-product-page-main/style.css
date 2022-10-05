@@ -16,8 +16,8 @@ body{
 .bigOverlay{
     display: none;
     position: absolute;
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     background: hsla(240, 2%, 12%, 0.712);
     z-index: 5;
 }
@@ -593,6 +593,10 @@ h3{
         gap: 15px;
     }
 
+    .bigOverlay{
+        z-index: 6;
+    }
+
     .divMenu{
         cursor: pointer;
     }
@@ -618,6 +622,7 @@ h3{
         width: 200px;
         height: 100%;
         left: 0;
+        top: 0;
         font-size: 16px;
         font-weight: 700;
     }
@@ -637,6 +642,9 @@ h3{
     }
 
     .divCloseMediaQueries{
+        height: 13.44px;
+        width: 13.44px;
+        margin-top: 20px;
         margin-left: 15px;
         cursor: pointer;
     }
