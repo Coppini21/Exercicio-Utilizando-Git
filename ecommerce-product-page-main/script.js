@@ -2,7 +2,20 @@ var soma = 0
 var somaLocalStorage = 0
 var meuStorage = window.localStorage
 var imgProdutoPrincipalAmpliada = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
+var x = window.matchMedia("(max-width: 375px)")
 
+function mediaQueries375px(x){
+    let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
+
+    if (x.matches){
+        secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex' 
+    } else {
+        secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'none'
+    }
+}
+
+mediaQueries375px(x)
+x.addListener(mediaQueries375px)
 
 function clickBotaoAdicionar(){
     let quantidade = document.getElementById('quantidade')
