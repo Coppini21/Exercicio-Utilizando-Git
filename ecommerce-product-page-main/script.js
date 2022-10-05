@@ -111,6 +111,20 @@ function fechandoImagens(){
     bigOverlay.style.display = 'none'
 }
 
+function abrirMenu(){
+    let divOpcoesMediaQueries = document.getElementsByClassName("divOpcoesMediaQueries")[0]
+    let bigOverlay = document.getElementsByClassName("bigOverlay")[0]
+    divOpcoesMediaQueries.style.display = 'block'
+    bigOverlay.style.display = "block"
+}
+
+function fecharMenu(){
+    let divOpcoesMediaQueries = document.getElementsByClassName("divOpcoesMediaQueries")[0]
+    let bigOverlay = document.getElementsByClassName("bigOverlay")[0]
+    divOpcoesMediaQueries.style.display = 'none'
+    bigOverlay.style.display = "none"
+}
+
 function clickFoto1AmpliandoImg(event){
     let overlay1 = document.getElementsByClassName('clickOver')[0]
     let overlay2 = document.getElementsByClassName('clickOver')[1]
