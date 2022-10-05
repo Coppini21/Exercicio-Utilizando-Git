@@ -35,7 +35,7 @@ header{
     gap: 15px;
 }
 
-.divLogoeOpcoesMediaQueries{
+.divOpcoesMediaQueries{
     display: none;
 }
 
@@ -607,6 +607,42 @@ h3{
     
     .divLogoeOpcoes{
         display: none;
+    }
+
+    .divOpcoesMediaQueries{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        z-index: 7;
+        background-color: white;
+        width: 200px;
+        height: 100%;
+        left: 0;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .opcaoMediaQueries{
+        margin-top: 18px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .opcaoMediaQueries:hover{
+        color: hsl(26, 100%, 55%);
+    }
+
+    .collectionsMediaQueries{
+        margin-top: 40px;
+    }
+
+    .divCloseMediaQueries{
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .divCloseMediaQueries svg:hover path{
+        fill: black;
     }
 
     .divCartAvatar{
