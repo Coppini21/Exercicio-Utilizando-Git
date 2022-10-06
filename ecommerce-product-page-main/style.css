@@ -821,3 +821,23 @@ h3{
     }
 }
 
+@media(max-width: 330px){
+    .divImgPrevious{
+        margin-right: 60%;
+    }
+
+    .divImgNext{
+        margin-left: 60%;
+    }
+}
+
+@media(max-width: 300px){
+    header{
+        padding: 20px 10px 10px 10px;
+    }
+
+    .divCartAvatar{
+        width: 72px;
+        gap: 0px;
+    }
+}
