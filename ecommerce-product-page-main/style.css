@@ -110,6 +110,7 @@ header{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     margin-top: 70px;
     margin-left: 80%;
+    border-radius: 10px;
     z-index: 5;
 }
 
@@ -276,7 +277,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 45px;
     position: fixed;
     z-index: 5;
 }
@@ -588,8 +589,6 @@ h3{
     body{
         display: flex;
         flex-direction: column;
-   
-
         position: relative;
     }
 
@@ -666,7 +665,8 @@ h3{
 
     .divCartAvatar{
         display: flex;
-        gap: 25px;
+        width: 72px;
+        gap: 0px;
     }
 
     .imgAvatar{
@@ -678,11 +678,41 @@ h3{
         display: none;
     }
 
+    .divTotal-ProdutoCart{
+        display: flex;
+        justify-content: center;
+        
+    }
+
     #divDescricaoProdutoCart{
-        display: block;
+        display: none;
+        position: absolute;
         max-width: 90vw;
-        height: 300px;
-        z-index: 6;
+        height: 250px;
+        margin-top: 70px;
+        margin-left: 0;
+        z-index: 7;
+    }
+
+    #paragrafoDescricaoCartVazio{
+        max-width: 90vw;
+        font-size: 14px;
+    }
+
+    .divDescricaoCartCheio{
+        max-width: 90vw;
+    }
+
+    .paragrafoDescricaoCartCheio{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .botaoCheckout{
+        min-width: 90%;
+        height: 40px;
+        font-size: 14px;
+        padding: 0px 0px 0px 0px;
     }
 
     main{
@@ -718,7 +748,7 @@ h3{
 
     .imgProdutoPrincipalDepoisDoClick{
         max-width: 375px;
-        height: 350px;
+        height: 300px;
         border-radius: 0px;
     }
 
