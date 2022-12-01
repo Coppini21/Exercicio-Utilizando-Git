@@ -3,16 +3,28 @@ var somaLocalStorage = 0
 var meuStorage = window.localStorage
 var imgProdutoPrincipalAmpliada = document.getElementsByClassName('imgProdutoPrincipalDepoisDoClick')[0]
 var x = window.matchMedia("(max-width: 375px)")
+var y = window.matchMedia("(max-width: 920px)")
 
 function mediaQueries375px(x){
     let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
 
     if (x.matches){
         secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex' 
+    } 
+}
+
+function mediaQueries920px(y){
+    let secaoTotalLadoEsquerdoDepoisDoClick = document.getElementsByClassName('secaoTotalLadoEsquerdoDepoisDoClick')[0]
+
+    if (y.matches){
+        secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'flex' 
     } else {
         secaoTotalLadoEsquerdoDepoisDoClick.style.display = 'none'
     }
 }
+
+mediaQueries920px(y)
+y.addListener(mediaQueries920px)
 
 mediaQueries375px(x)
 x.addListener(mediaQueries375px)
