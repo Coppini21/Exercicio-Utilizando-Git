@@ -588,6 +588,173 @@ h3{
 }
 
 
+@media(max-width: 920px){
+    body{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    header{
+        padding: 20px 30px 10px 30px;
+    }
+    
+    .headerMediaQueries{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .bigOverlay{
+        z-index: 6;
+    }
+
+    .divMenu{
+        cursor: pointer;
+    }
+
+    .divMenu svg:hover path{
+        fill: black;
+    }
+
+    .divLogoeOpcoesMediaQueries{
+        display: none;
+    }
+    
+    .divLogoeOpcoes{
+        display: none;
+    }
+
+    .divOpcoesMediaQueries{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        z-index: 7;
+        background-color: white;
+        width: 200px;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .opcaoMediaQueries{
+        margin-top: 18px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .opcaoMediaQueries:hover{
+        color: hsl(26, 100%, 55%);
+    }
+
+    .collectionsMediaQueries{
+        margin-top: 40px;
+    }
+
+    .divCloseMediaQueries{
+        height: 13.44px;
+        width: 13.44px;
+        margin-top: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .divCloseMediaQueries svg:hover path{
+        fill: black;
+    }
+
+
+    .divTotal-ProdutoCart{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #divDescricaoProdutoCart{
+        display: none;
+        position: absolute;
+        max-width: 90vw;
+        height: 250px;
+        margin-top: 70px;
+        margin-left: 0;
+        z-index: 7;
+    }
+
+    #paragrafoDescricaoCartVazio{
+        max-width: 90vw;
+        font-size: 14px;
+    }
+
+    .divDescricaoCartCheio{
+        max-width: 90vw;
+    }
+
+    .paragrafoDescricaoCartCheio{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .botaoCheckout{
+        min-width: 90%;
+        height: 40px;
+        font-size: 14px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    main{
+        width: 100%;
+        overflow: hidden; 
+    }
+
+
+    .secaoTotalLadoEsquerdo{
+        display: none;
+    }
+
+    .secaoTotalLadoEsquerdoDepoisDoClick{
+        display: flex;
+        max-width: 375px;
+        height: 350px;
+        position: relative;
+        margin-bottom: 0px;
+    }
+
+    .divImgPrevious{
+        height: 40px;
+        width: 40px;
+        margin-right: 75%;
+    }
+
+    .divImgPrevious:hover svg path{
+        stroke: hsl(26, 100%, 55%);
+    }
+
+    .imgProdutoPrincipalDepoisDoClick{
+        max-width: 425px;
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    .divImgNext{
+        height: 40px;
+        width: 40px;
+        margin-left: 75%;
+    }
+
+    .divImgNext:hover svg path{
+        stroke: hsl(26, 100%, 55%);
+    }
+
+    .opcoesImagensDoProduto{
+        display: none;
+    }
+
+    
+}
+
 @media(max-width: 375px){
     body{
         display: flex;
